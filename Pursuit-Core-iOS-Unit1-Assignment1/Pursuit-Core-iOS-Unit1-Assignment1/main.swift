@@ -59,7 +59,7 @@ print("Augh, for real? C'mon, you've never seen a hill before? You can totes mak
 } else {
 print("Look, whatever you're thinking, totes get it, but you're so close to Main Street and the next train isn't for another hour. Let's go.")
 }
-//MAIN STREET - COFFEE & MARSHMALLOW SHOP
+//MAIN STREET - CAFE & MARSHMALLOW SHOP
 print("~~*~~*~~*~~")
 
 print("You're making it! The view is actually nice from the top of the hill, you get to see the river and there's a lot of sunlight. You take a moment to stop grumping about everything, but...just a moment. Press any key when you're feeling good.")
@@ -101,6 +101,11 @@ let cafeResponseOptions = """
         """
 
 print(cafeResponseOptions)
+
+
+
+//COMMENTS FOR REMAINDER DRAFT//
+
 //var yourCafeResponse = readLine()!
 
 //    print("You say nothing so the cashier goes ahead and sullenly completes your order. You ponder what it would have been like to have stayed in bed this morning.")
@@ -111,9 +116,10 @@ print(cafeResponseOptions)
 
 //FARM ENTRANCE
 
-    //Reminder: You are using a WHILE LOOP here in the farm while your friends are drinking all the rose.
+    //Reminder: game requirements see bottom of doc
+      /*print("You're almost at the farm, full of regret at having agreed to this plan to begin with. You can see the sign...*/
 
-print("You see your friends together by a table just inside the gates. On a scale of 1-10 just how happy are you to see these people?") //6
+//print("You see your friends together by a table just inside the gates. On a scale of 1-10 just how happy are you to see these people?") //6
 
 ////var howHappyNumber = readLine()!
 ////for number in howHappyNumber {
@@ -125,8 +131,8 @@ print("You see your friends together by a table just inside the gates. On a scal
 //   // print("Well it's a reunion! At least that's productive. But now you think one of them has shouted upon seeing you, 'I've been at the rose-ay all day!' Ask them to kindly repeat what they've just said to you, because what you thought you heard can't possibly be the welcome which you've received.")
 
 //7
-////  let pleaseRepeat = readLine()
-////print("Is there any wine left for you?")
+//let pleaseRepeat = readLine()
+//print("Is there any wine left for you?")
 
 //    let roseAllDay = true
 //    let noMoreWine = true
@@ -145,7 +151,7 @@ print("You see your friends together by a table just inside the gates. On a scal
 //}
 
 
-   //user choice - your friends announce that they are moving into a van to become video bloggers looking for online fame. you decide you need to leave immediately. are you calling an Uber or getting back on your skateboard and popping that blister
+   //user choice - your friends announce that they are moving into a van to become video bloggers looking for online fame. you decide you need to leave immediately. Are you calling an Uber?
 
 //ALPACA FARM
 
@@ -159,9 +165,6 @@ print("You see your friends together by a table just inside the gates. On a scal
     //tenth user choice - you have notifications on your phone. do you open them or turn your phone off?
 
 //**END**
-
-        //print("You're almost at the farm, full of regret at having agreed to this plan to begin with. You can see the sign to the entrance from here, but something's coming - a guard llama runs over to you! What do you do? Toss a pancake? Run away? What's a guard llama?")
-        //    print("Llamy here sizes you up and decides you're all right. You can go see the alpacas. How arbitrary!")
 
 //_______________
 //Game Requirements:
