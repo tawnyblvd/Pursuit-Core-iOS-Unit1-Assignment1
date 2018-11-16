@@ -8,7 +8,7 @@
 
 import Foundation
 
-//This is a text-based game for assignment 1 of Unit 1 for Pursuit.
+//This is a text-based game for assignment 1 of Unit 1 for Pursuit. I am currently updating it to be a better story format now that the point of it is no longer to fulfill assignment requirements.
 
 //INTRO - TITLE
 
@@ -23,9 +23,9 @@ let startGameHere = readLine()!         //this is allowing me to have the next p
 print("You're finally off the Metro-North train after an hour and half! It's beautiful by the Hudson River here with all the tree leaves changing color. Very different from Brooklyn. You've got more or less directions for the nearest alpaca farm on the back of the train ticket crumpled in your pocket. Now that you've arrived though you're suddenly feeling hesitant. Your friends think going upstate is on-trend so now you're here, but do you even want to see these people?")
 print(" ")
 print("Do you even want to see them? Your friends? Frands. Yes or No? Pancake?")
-var choosingToSeeFriends = readLine()!       //1
+var choosingToSeeFriends = readLine()!
 
-switch choosingToSeeFriends {       //let's use switch
+switch choosingToSeeFriends {
 case "yes", "Yes":
 print("Cool, that's what a well-adjusted person would say.")
 
@@ -38,7 +38,7 @@ print("I'll take that as a yes, so let's get going.")
 default:
 print("Wait, what? Wait. Yes or no?")
     choosingToSeeFriends = readLine()!
-if choosingToSeeFriends == "yes" {      //let's use an if/else
+if choosingToSeeFriends == "yes" {
     print("Cool, that's what a well-adjusted person would say.")
 } else if choosingToSeeFriends == "no" {
 print("Well, tough. The ticket to get here wasn't cheap, so take a deep breath and get ready for this walk.")
@@ -50,7 +50,7 @@ print("I'll take that as a yes, so let's get going.")
 
 print("~~*~~*~~*~~")
 
-print("You're walking up a curving hill towards the town's Main Street. This hill is a bit extra. You worked all last night, this is starting to feel like the worst. Do you keep going or leave immediately?")     //2
+print("You're walking up a curving hill towards the town's Main Street. This hill is a bit extra. You worked all last night, this is starting to feel like the worst. Do you keep going or leave immediately?")
 let hillIsABummer = readLine()!
 if hillIsABummer == "keep going" {
 print("I'm sure you can find something refreshing along the Main Street coming up. You totes can.")
@@ -78,20 +78,20 @@ print("~~*~~*~~*~~")
 
 print("In line for coffee, in line for coffee. The barista is flirting with the woman in front of you, which gives you time to look over the menu. In a glass case there is a sign that says \"ARTISANAL LOCALLY MADE MARSHMALLOWS\" and it blows your mind because this somehow exists and there are toppings involved. That said, these two are either gonna get a room or you'll be at the front of the line soon. What do you need to get? You can surprise your friends with snacks.")   //3
 
-    let drink = "large hot latte"     //let's use type inference
+    let drink = "large hot latte"
     var artisanalMarshmallows = ["rainbow sprinkle marshmallow", "double chocolate marshmallow", "salted caramel marshmallow"]
-    let impulseBuyCookie: String = "peanut butter cookie"     //let's use type annotation
+    let impulseBuyCookie: String = "peanut butter cookie"
     let impulseBuyScone = "cranberry scone"
-    var thisIsGettingCostly = (impulseBuyCookie, impulseBuyScone)       //let's create a tuple
+    var thisIsGettingCostly = (impulseBuyCookie, impulseBuyScone)
     var addToCoffeeList = readLine()!
 
-for _ in artisanalMarshmallows {        //let's use a for-in loop
-    artisanalMarshmallows.append(thisIsGettingCostly.1)     //let's use part of the tuple
+for _ in artisanalMarshmallows {
+    artisanalMarshmallows.append(thisIsGettingCostly.1)
 }
 print("Oof, so the list so far is a \(drink) for you, a \(artisanalMarshmallows), and a \(thisIsGettingCostly.0) because you can't help yourself.")
 
-//FIX THIS: SO your array's brackets pop up in the game output, but you'll just have to worry about this after your submit and move on for now. You can go back to it after you submit, there's just no time right now.
-//4
+//FIX THIS: SO your array's brackets pop up in the game output, but you'll just have to worry about this later and move on for now.
+
 let cafeResponseOptions = """
         You get to the cashier and he hears your order and says, Whoa, all this for you? with a wink. Which of the below do you say?
         1 - Actually, I'm leaving immediately."
@@ -112,14 +112,12 @@ print(cafeResponseOptions)
 
 //MAIN STREET - HIKE TO FARM
 
-    //5
-
 //FARM ENTRANCE
 
     //Reminder: game requirements see bottom of doc
       /*print("You're almost at the farm, full of regret at having agreed to this plan to begin with. You can see the sign...*/
 
-//print("You see your friends together by a table just inside the gates. On a scale of 1-10 just how happy are you to see these people?") //6
+//print("You see your friends together by a table just inside the gates. On a scale of 1-10 just how happy are you to see these people?")
 
 ////var howHappyNumber = readLine()!
 ////for number in howHappyNumber {
@@ -130,7 +128,6 @@ print(cafeResponseOptions)
 //   // } else {
 //   // print("Well it's a reunion! At least that's productive. But now you think one of them has shouted upon seeing you, 'I've been at the rose-ay all day!' Ask them to kindly repeat what they've just said to you, because what you thought you heard can't possibly be the welcome which you've received.")
 
-//7
 //let pleaseRepeat = readLine()
 //print("Is there any wine left for you?")
 
@@ -155,7 +152,6 @@ print(cafeResponseOptions)
 
 //ALPACA FARM
 
-//8
     //user choice - someone asks you how your ex is without realizing you are no longer together and the split was particularly volatile "I need to leave immediately." "we broke up and were particularly volatile." "I refuse to go on Judge Judy." "Thank u, next." "Sorry, I need to go find myself."
 
     //Reminder: give an instance of AT LEAST RANGE here in the alpaca farm as you feed the alpacas.
@@ -166,11 +162,4 @@ print(cafeResponseOptions)
 
 //**END**
 
-//_______________
-//Game Requirements:
-//    <li>Your command line app must build and run with no compiler errors or warnings</li>
-//    <li>Have at least 10 opportunities for the user to make decisions</li> UP TO:
-//    <li>Have at least one opportunity where the user will enter a number (see converting Strings to numbers)</li>
-//    <li>Use at least range in your code</li>
-//    <li>Use a while loop in your code</li>
 
