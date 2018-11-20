@@ -8,7 +8,7 @@
 
 import Foundation
 
-//This is a text-based game for assignment 1 of Unit 1 for Pursuit. I am currently updating it to be a better story format now that the point of it is no longer to fulfill assignment requirements.
+//This text-based go-around from user choices is made for Unit 1 of Pursuit as Assignment 1.
 
 //INTRO - TITLE
 
@@ -20,28 +20,28 @@ let startGameHere = readLine()!         //this is allowing me to have the next p
 
 //INTRO - SCENE: HUDSON LINE TRAIN STATION
 
-print("You're finally off the Metro-North train after an hour and half! It's beautiful by the Hudson River here with all the tree leaves changing color. Very different from Brooklyn. You've got more or less directions for the nearest alpaca farm on the back of the train ticket crumpled in your pocket. Now that you've arrived though you're suddenly feeling hesitant. Your friends think going upstate is on-trend so now you're here, but do you even want to see these people?")
+print("You're finally off the Metro-North train after an hour and half! It's beautiful by the Hudson River here with all the tree leaves changing color. Very different from Brooklyn. You've got more or less directions for the nearest alpaca farm on the back of the train ticket crumpled in your pocket. Now that you've arrived though you're suddenly feeling hesitant. Your friends think going upstate is on-trend so now you're here, but, really, do you even want to see these people?")
 print(" ")
 print("Do you even want to see them? Your friends? Frands. Yes or No? Pancake?")
 var choosingToSeeFriends = readLine()!
 
 switch choosingToSeeFriends {
 case "yes", "Yes":
-print("Cool, that's what a well-adjusted person would say.")
+print("Cool, that's what a well-adjusted individual would say.")
 
 case "no", "No":
-print("Well, tough. The ticket to get here wasn't cheap, so take a deep breath and get ready for this walk.")
+print("Well, tough. The ticket to get here wasn't cheap, so take a deep breath and get ready for this.")
 
 case "pancake", "Pancake":
-print("I'll take that as a yes, so let's get going.")
+print("You know what, why not. Anyway, let's go.")
 
 default:
 print("Wait, what? Wait. Yes or no?")
     choosingToSeeFriends = readLine()!
 if choosingToSeeFriends == "yes" {
-    print("Cool, that's what a well-adjusted person would say.")
+   print("That's what I wanted to hear.")
 } else if choosingToSeeFriends == "no" {
-print("Well, tough. The ticket to get here wasn't cheap, so take a deep breath and get ready for this walk.")
+print("Well, tough. The ticket to get here wasn't cheap, so take a deep breath and get ready for this.")
 } else {
 print("I'll take that as a yes, so let's get going.")
 }
@@ -50,33 +50,33 @@ print("I'll take that as a yes, so let's get going.")
 
 print("~~*~~*~~*~~")
 
-print("You're walking up a curving hill towards the town's Main Street. This hill is a bit extra. You worked all last night, this is starting to feel like the worst. Do you keep going or leave immediately?")
+print("You're walking up a curving hill towards the Main Street. This hill is a bit extra. You worked all last night, this is starting to feel like the worst. Do you keep going or leave immediately?")
 let hillIsABummer = readLine()!
 if hillIsABummer == "keep going" {
-print("I'm sure you can find something refreshing along the Main Street coming up. You totes can.")
+print("I'm sure you can find something refreshing once you get to Main Street. You totes can. Totes.")
 } else if hillIsABummer == "leave immediately" {
-print("Augh, for real? C'mon, you've never seen a hill before? You can totes make it to Main Street. Totes.")
+print("For real? C'mon, you've never seen a hill before? You can totes make it to Main Street. Totes.")
 } else {
 print("Look, whatever you're thinking, totes get it, but you're so close to Main Street and the next train isn't for another hour. Let's go.")
 }
 //MAIN STREET - CAFE & MARSHMALLOW SHOP
 print("~~*~~*~~*~~")
 
-print("You're making it! The view is actually nice from the top of the hill, you get to see the river and there's a lot of sunlight. You take a moment to stop grumping about everything, but...just a moment. Press any key when you're feeling good.")
+print("You're making it! Kinda. The view is actually nice from the top of the hill, you get to see the river and it's sunny. You take a moment to stop grumping about everything, at least a moment. Press any key when you're feeling good.")
 
 let smallTownsAreCute = readLine()!
 
 print("~~*~~*~~*~~")
 
-print("You look down the Main Street. You're pretty sure other people would call this twee, and it is endearing. You see a taco place across the street, but the coffee shop next door catches your eye because caffeine is just the healthy choice you're gonna be making today. Walk up the steps.")
+print("You look down the Main Street. You're pretty sure other people would call this twee, and you admit it might be endearing. You see a taco place across the street, but the coffee shop next door catches your eye 'cause caffeine is just the healthy choice you're gonna be making today. Walk up the steps.")
 
 let timeForCoffee = readLine()!
 
-print("Okay, so \(timeForCoffee)? Ok, well we're going on in.")
+print("Okay, so \(timeForCoffee)? Ok, well we're going on in.") //not sure what else to say here
 
 print("~~*~~*~~*~~")
 
-print("In line for coffee, in line for coffee. The barista is flirting with the woman in front of you, which gives you time to look over the menu. In a glass case there is a sign that says \"ARTISANAL LOCALLY MADE MARSHMALLOWS\" and it blows your mind because this somehow exists and there are toppings involved. That said, these two are either gonna get a room or you'll be at the front of the line soon. What do you need to get? You can surprise your friends with snacks.")   //3
+print("In line for coffee, in line for coffee. The barista is flirting with the customer ahead of you, which sure does give you some time to look over the menu. In a glass case there's a sign that says \"ARTISANAL LOCALLY MADE MARSHMALLOWS\" and it blows your mind as not only does this somehow exist, but also there are toppings involved. That said, these two are either gonna get a room or you'll be at the front of the line soon. What do you need to get? You can surprise your buds with snacks.")
 
     let drink = "large hot latte"
     var artisanalMarshmallows = ["rainbow sprinkle marshmallow", "double chocolate marshmallow", "salted caramel marshmallow"]
@@ -93,22 +93,36 @@ print("Oof, so the list so far is a \(drink) for you, a \(artisanalMarshmallows)
 //FIX THIS: SO your array's brackets pop up in the game output, but you'll just have to worry about this later and move on for now.
 
 let cafeResponseOptions = """
-        You get to the cashier and he hears your order and says, Whoa, all this for you? with a wink. Which of the below do you say?
+        You get to the cashier and he hears your order and says, Whoa, all this for you? with a wink. Which are you compelled to say?
         1 - Actually, I'm leaving immediately."
-        2 - Could you tell me when the next train back to the city is?"
+        2 - Tell me when the next train back to the city is?"
         3 - I'm bringing these to keep my friends from drunkenly falling asleep on a farm."
         4 - Ha, no, I wish! I'm bringing them to some friends.
         """
 
 print(cafeResponseOptions)
 
+var yourCafeResponse = readLine()!
+switch yourCafeResponse {
+case "1", "one", "One":
+    print("Actually, I'm leaving immediately.")
+    
+case "2", "two", "Two":
+    print("Tell me when the next train back to the city is?")
+    
+case "3", "three", "Three":
+    print("I'm bringing these to keep my friends from drunkenly falling asleep on a farm.")
+    
+case "4", "four", "Four":
+    print("Ha, no, I wish! I'm bringing them to some friends.")
+    
+default:
+    print("In an attempt to not be surly, you say actually next to nothing so the cashier sullenly completes your order. You ponder what it would have been like to have stayed in bed this morning.")
+}
 
+print("Well, that's over with and now you just have to make it to the farm unscathed from the dangers of hot coffee and powdered sugar.")
 
 //COMMENTS FOR REMAINDER DRAFT//
-
-//var yourCafeResponse = readLine()!
-
-//    print("You say nothing so the cashier goes ahead and sullenly completes your order. You ponder what it would have been like to have stayed in bed this morning.")
 
 //MAIN STREET - HIKE TO FARM
 
@@ -154,7 +168,7 @@ print(cafeResponseOptions)
 
     //user choice - someone asks you how your ex is without realizing you are no longer together and the split was particularly volatile "I need to leave immediately." "we broke up and were particularly volatile." "I refuse to go on Judge Judy." "Thank u, next." "Sorry, I need to go find myself."
 
-    //Reminder: give an instance of AT LEAST RANGE here in the alpaca farm as you feed the alpacas.
+    //do they feed the alpacas
 
 //OUTRO - FARM ENTRANCE II
 
